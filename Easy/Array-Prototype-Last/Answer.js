@@ -9,3 +9,7 @@ Array.prototype.last = function() {
         return this[this.length - 1];
     }
 };
+
+// Example
+const arr = [1, 2, 3];
+arr.last(); // 3
