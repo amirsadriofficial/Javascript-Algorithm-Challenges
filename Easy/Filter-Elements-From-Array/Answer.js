@@ -5,8 +5,11 @@
 */
 
 var filter = function(arr, fn) {
-    // TODO: Using a for loop instead of a filter method
-    return arr.filter(fn)
+    const newArr = []
+    for (let i = 0; i < arr.length; i++){ 
+        fn(arr[i],i) && newArr.push(arr[i]);
+    }
+    return newArr;
 };
 
 // Example
