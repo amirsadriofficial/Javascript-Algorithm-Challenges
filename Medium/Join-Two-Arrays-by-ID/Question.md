@@ -8,53 +8,52 @@ If two objects share an id, their properties should be merged into a single obje
 
 If a key only exists in one object, that single key-value pair should be included in the object.<br>
 If a key is included in both objects, the value in the object from arr2 should override the value from arr1.<br>
- 
 
 Example 1:<br>
 Input: <br>
 arr1 = [<br>
-    {"id": 1, "x": 1},<br>
-    {"id": 2, "x": 9}<br>
+{"id": 1, "x": 1},<br>
+{"id": 2, "x": 9}<br>
 ], <br>
 arr2 = [<br>
-    {"id": 3, "x": 5}<br>
+{"id": 3, "x": 5}<br>
 ]<br>
 Output: <br>
 [<br>
-    {"id": 1, "x": 1},<br>
-    {"id": 2, "x": 9},<br>
-    {"id": 3, "x": 5}<br>
+{"id": 1, "x": 1},<br>
+{"id": 2, "x": 9},<br>
+{"id": 3, "x": 5}<br>
 ]<br>
 Explanation: There are no duplicate ids so arr1 is simply concatenated with arr2.<br>
 
 Example 2:<br>
 Input: <br>
 arr1 = [<br>
-    {"id": 1, "x": 2, "y": 3},<br>
-    {"id": 2, "x": 3, "y": 6}<br>
+{"id": 1, "x": 2, "y": 3},<br>
+{"id": 2, "x": 3, "y": 6}<br>
 ], <br>
 arr2 = [<br>
-    {"id": 2, "x": 10, "y": 20},<br>
-    {"id": 3, "x": 0, "y": 0}<br>
+{"id": 2, "x": 10, "y": 20},<br>
+{"id": 3, "x": 0, "y": 0}<br>
 ]<br>
 Output: <br>
 [<br>
-    {"id": 1, "x": 2, "y": 3},<br>
-    {"id": 2, "x": 10, "y": 20},<br>
-    {"id": 3, "x": 0, "y": 0}<br>
+{"id": 1, "x": 2, "y": 3},<br>
+{"id": 2, "x": 10, "y": 20},<br>
+{"id": 3, "x": 0, "y": 0}<br>
 ]<br>
 Explanation: The two objects with id=1 and id=3 are included in the result array without modifiction. The two objects with id=2 are merged together. The keys from arr2 override the values in arr1.<br>
 
 Example 3:<br>
 Input: <br>
 arr1 = [<br>
-    {"id": 1, "b": {"b": 94},"v": [4, 3], "y": 48}<br>
+{"id": 1, "b": {"b": 94},"v": [4, 3], "y": 48}<br>
 ]<br>
 arr2 = [<br>
-    {"id": 1, "b": {"c": 84}, "v": [1, 3]}<br>
+{"id": 1, "b": {"c": 84}, "v": [1, 3]}<br>
 ]<br>
 Output: [<br>
-    {"id": 1, "b": {"c": 84}, "v": [1, 3], "y": 48}<br>
+{"id": 1, "b": {"c": 84}, "v": [1, 3], "y": 48}<br>
 ]<br>
 Explanation: The two objects with id=1 are merged together. For the keys "b" and "v" the values from arr2 are used. Since the key "y" only exists in arr1, that value is taken form arr1.<br>
 
