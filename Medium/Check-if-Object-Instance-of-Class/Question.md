@@ -4,8 +4,6 @@ Write a function that checks if a given value is an instance of a given class or
 
 There are no constraints on the data types that can be passed to the function. For example, the value or the class could be undefined.<br>
 
- 
-
 Example 1:<br>
 Input: func = () => checkIfInstanceOf(new Date(), Date)<br>
 Output: true<br>
