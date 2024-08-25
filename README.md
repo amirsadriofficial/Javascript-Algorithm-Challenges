@@ -1,3 +1,4 @@
-# Javascript Questions
+# CPP Algorithm Challenges
 
-In this repository, I tackle various challenges and algorithms for the JavaScript language, sourced from the Leetcode platform. The repository is organized into three levels of difficulty: Easy, Medium, and Hard, each housed within its respective folder. For every challenge, I have created a dedicated folder containing an .md file with the description of the problem, as well as a corresponding JavaScript file with my solution.
+## Introduction
+LeetCode is a popular platform for practicing coding problems, ranging from easy to hard. This repository contains CPP implementations of solutions for these challenges, aimed at helping developers improve their problem-solving skills and get familiar with CPP.
