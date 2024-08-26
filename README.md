@@ -17,15 +17,15 @@ Each problem is organized within its respective difficulty folder as follows:
 ```bash
 .
 └── Easy/
-│   │   └── one-problem/
+│   │   └── any-problem/
 │   │   │   ├── Question.md
 │   │   │   ├── Answer.ts
 ├── Medium/
-│   │   └── one-problem/
+│   │   └── any-problem/
 │   │   │   ├── Question.md
 │   │   │   ├── Answer.ts
 └── Hard/
-│   │   └── one-problem/
+│   │   └── any-problem/
 │   │   │   ├── Question.md
 │   │   │   ├── Answer.ts
 ```
